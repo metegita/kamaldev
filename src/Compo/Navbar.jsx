@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,44 +38,44 @@ const Navbar = () => {
         {/* Navigation Links */}
         <ul className="flex space-x-6">
           <li>
-            <a
-              href="/"
+            <Link
+              to="/"
               className={`hover:text-blue-600 ${
                 isScrolled ? "text-black" : "text-white"
               }`}
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/abouthero"
+            <Link
+              to="/abouthero"
               className={`hover:text-blue-600 ${
                 isScrolled ? "text-black" : "text-white"
               }`}
             >
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/productandservices"
+            <Link
+              to="/productandservices"
               className={`hover:text-blue-600 ${
                 isScrolled ? "text-black" : "text-white"
               }`}
             >
               Services
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/carrehero"
+            <Link
+              to="/carrehero"
               className={`hover:text-blue-600 ${
                 isScrolled ? "text-black" : "text-white"
               }`}
             >
               Carrier
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
