@@ -1,0 +1,90 @@
+@keyframes fade-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Text Animations */
+@keyframes text-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes text-slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tailwind Custom Animation */
+.motion-safe\:animate-fade-left {
+  animation: fade-left 1s ease-out forwards;
+}
+
+.motion-safe\:animate-fade-right {
+  animation: fade-right 1s ease-out forwards;
+}
+
+.motion-safe\:animate-fade-up {
+  animation: fade-up 1s ease-out forwards;
+}
+
+.motion-safe\:animate-fade-down {
+  animation: fade-down 1s ease-out forwards;
+}
+
+/* Text Animations */
+.motion-safe\:animate-text-fade-in {
+  animation: text-fade-in 1s ease-out forwards;
+}
+
+.motion-safe\:animate-text-slide-up {
+  animation: text-slide-up 1s ease-out forwards;
+}

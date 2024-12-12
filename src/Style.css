@@ -1,0 +1,17 @@
+/* Add gap between slides */
+.slick-slide > div {
+  margin: 0 15px; /* Horizontal gap between slides */
+}
+
+.slick-list {
+  margin: 0 -15px; /* Prevent overall padding from breaking the layout */
+}
+
+/* Additional styling for smooth appearance */
+.carousel-card {
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel-card:hover {
+  transform: scale(1.03);
+}
