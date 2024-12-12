@@ -26,22 +26,14 @@ function App() {
       {/* Routes for different pages */}
       <Routes>
        
-        <Route path="/about" element={<AboutUs />} />
 
-        <Route path="/careers" element={<Careers />} />
-        <Route path="/gallery" element={<Gallery />} />
         <Route path="/" element={<Hero />} />
-        <Route path="/meetourtean" element={<MeetOurTeam />} />
         <Route path="/productandservices" element={<ProductAndServices />} />
-        <Route path="/value" element={<ValuesPage />} />
-        <Route path="/visionandmission" element={<VisionAndMissionPage />} />
-        <Route path="/whychoose" element={<WhyChooseUs />} />
-                <Route path="/abouthero" element={<AboutHero />} />
-                <Route path="/carrehero" element={<Carrerhero />} />
+        <Route path="/abouthero" element={<AboutHero />} />
+        <Route path="/carrehero" element={<Carrerhero />} />
 
       </Routes>
 
-      {/* Footer stays on all pages */}
       <Footer />
     </BrowserRouter>
   );
